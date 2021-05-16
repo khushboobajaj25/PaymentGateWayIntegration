@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donation TSF</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/slideshow.css">
+  <style>
+    .carousel-inner>.item>img,
+    .carousel-inner>.item>a>img {
+      width: 120%;
+      height: 100%;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body style="background-color:mediumslateblue">
+  <header class="text-gray-600 body-font">
+    <div class="mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <img src="images/img2.png" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+          stroke-width="2" class="w-30 h-14 text-white p-2 rounded-full" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">The Sparks Foundation</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center text-white">
+        <a class="mr-5 hover:text-gray-900" href="home.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="#about">About Us</a>
+        <a class="mr-5 hover:text-gray-900" href="contact.html">Contact</a>
+      </nav>
+      <button
+        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Donate
+        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+          <path d="M5 12h14M12 5l7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+  <div class="container my-auto mx-auto">
+    <div style="text-align:center">
+      <h2>Donate</h2>
+      <p>Help for a good cause!</p>
+    </div>
+    <div class="row">
+      <div class="column">
+        <br>
+        <br>
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="4"></li>
+              <li data-target="#myCarousel" data-slide-to="5"></li>
+  
+  
+            </ol>
+  
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+  
+              <div class="slideshow-container">
+  
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="images/img21.jpeg" style="width:100%">
+                </div>
+  
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="images/img31.jpeg" style="width:100%">
+                </div>
+  
+               
+  
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="images/img51.jpeg" style="width:100%">
+  
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext"></div>
+                  <img src="images/img61.jpeg" style="width:100%">
+  
+                </div>
+                
+  
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+              </div>
+              <br>
+  
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+  
+              </div>
+  
+            </div>
+  
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      <div class="column">
+        <form action="">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="fullname" placeholder="Your fullname">
+          <label for="lname">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Email">
+          <label for="country">State</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your State">
+          <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HB20QVfz3zbATo" async> </script>
+         
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="js/slideshow.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
